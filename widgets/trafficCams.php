@@ -1,10 +1,13 @@
 
 				<div class="content">
 					<?php
-						session_start();
-						$city = $_SESSION['city'];
-						require_once('../php/config.php');	
-						$url = $SITE_PATH . 'data/cameras/webcams.php?city=' . $city;
+                        require_once('../php/urlHelper.php');
+                        session_start();
+						$params = array (
+                          "city"  => $_SESSION['city']
+                        );
+						$url = getUrl("data/cameras/webcams.php", $params);
+
 						if($city == 'antwerpen'){
 							$numberOfCams = 17;
 						} else if ($city == 'gent'){

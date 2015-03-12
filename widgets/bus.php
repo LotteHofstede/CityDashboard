@@ -12,8 +12,8 @@
 						$stopLong = $stop[0]['loc'][1];
 						
 						
-						require_once('../php/config.php');					
-						$url = $SITE_PATH . 'data/busses/delijn.php?id=' . $stopNumber;
+						require_once('../php/urlHelper.php');
+                        $url = getUrl("data/busses/delijn.php", array("id" => $stopNumber));
 						$jsondata = file_get_contents($url);
 						$arrayData = json_decode($jsondata, true);
 					?>

@@ -10,7 +10,6 @@
                         $url = getUrl("data/foursquare/foursquare.php", $params);
 						$jsondata = file_get_contents($url);
                         $arrayData = json_decode($jsondata, true);
-
 						echo '<ul>';
 						for ($i = 1; $i<9; $i++){
 							$place = $arrayData['checkin' . $i]['place'];

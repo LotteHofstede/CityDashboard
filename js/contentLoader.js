@@ -2,7 +2,7 @@ $(window).ready(function(){
 
 	//LOAD WIDGETS, COUNTDOWN TIMER, SET REFRESH TIME, ..
 	$.getScript('../js/countdown.js');
-	
+	/*
 
 	$("#weather .content").load("../widgets/weather.php #basic", function(){
 		$('#weather .footer').html('click for more info');
@@ -147,7 +147,31 @@ $(window).ready(function(){
 		}, 1800000);
 		setInterval('secondPassedLatesttweets()', 1000);
 	});
-	
+	*/
+
+
+    var widgets = [
+        ["#weather", "../widgets/weather.php"],
+        ["#forecast", "../weather/weatherGraph.php"],
+        ["#bus", "../widgets/bus.php"],
+        ["#air", "../widgets/air.php"],
+        ["#twitterTrends", "../widgets/twitterTrends.php"],
+        ["#bikes", "../widgets/bikes.php"],
+        ["#wikipedia", "../widgets/wikipedia.php"],
+        ["#cars", "../widgets/cars.php"],
+        ["#news", "../widgets/news.php"],
+        ["#events", "../widgets/events.php"],
+        ["#trafficCams", "../widgets/trafficCams.php"],
+        ["#commentBox", "../widgets/commentBox.php"],
+        ["#policeTweets", "../widgets/policeStream.php"],
+        ["#delijnTweets", "../widgets/delijnStream.php"],
+        ["#instagram", "../widgets/instagram.php"],
+        ["#foursquare", "../widgets/foursquare.php"],
+        ["#latestTweets", "../widgets/latestTweets.php"]
+    ];
+    for (var i = 0 ; i <widgets.length; i++) {
+        $(widgets[i][0]+" .content").load(widgets[i][1]);
+    }
 	//GOOGLE MAP
 	function initialize() {
   var myLatlng = new google.maps.LatLng(latitude, longitude);
