@@ -1,0 +1,791 @@
+/* ICON FONTS */
+@import url(http://weloveiconfonts.com/api/?family=maki|brandico|zocial|typicons|entypo|fontawesome);
+
+/* maki */
+[class*="maki-"]:before {
+	font-family: 'maki', sans-serif;
+	font-size: 20px;
+	float: left;
+}
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+  font-size: 20px;
+  float: left;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  font-size: 20px;
+  float: left;
+}
+
+/* typicons */
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+  font-size: 20px;
+  float: left;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 20px;
+  float: left;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 20px;
+  float: left;
+}
+
+.car-icon {
+	background-image: URL('../img/car-icon.png');
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+
+/* HIGHLIGHT COLOR */
+::selection {
+	background: #ffbf1f; /* Safari */
+	}
+::-moz-selection {
+	background: #ffbf1f; /* Firefox */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+	cursor: wait;
+	 -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+
+body { 
+	font-family: sans-serif; 
+	background-color: #E7FFE9;
+	color: #ffffff;
+	max-width: 910px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	position: fixed;
+	width: 910px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 30px;
+	background-color: #333;
+	z-index: 3;
+	border-bottom: 5px solid #E7FFE9;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+header #city {
+	float:left;
+	background-color: #FF5E01;
+	color: #E7FFE9;
+	padding: 5px;
+}
+
+header #date {
+	float:left;
+	font-size: 30px;
+	padding: 5px;
+	background-color: #009AF0;
+	color: #D1E8E5;
+}
+
+header #clock {
+	float:left;
+	font-size: 30px;
+	padding: 5px;
+	background-color: #d1e000;
+	color: #333;
+}
+
+header #restart {
+	float: right;
+	background-color: #E82C0C;
+	font-size: 30px;
+	padding: 5px;
+	border-left: 5px solid #E7FFE9;
+}
+
+header #restart a {
+	text-decoration: none;
+	color: #E7FFE9;
+}
+
+header #restart a:hover {
+	color: #333;
+}
+
+.packery {
+	clear: both;
+	max-width: 910px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 45px;
+}
+
+/* packery clearfix */
+.packery:after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+
+/* ITEMS */
+.item {
+	width: 300px;
+	height: 185px;
+	float: left;
+	background-color: #333333;
+	overflow: hidden;
+	position: relative; 
+	
+}
+
+.item .title {
+	float: left;
+	width: 100%;
+	padding: 5px;
+}
+
+.item .title .title-text {
+	float: right;
+	font-size: 13px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.item .content {
+	clear: both;
+	float: left;
+	padding: 4px;
+	padding-top: 0;
+	font-size: 14px;
+	font-family: 'Average Sans', sans-serif;
+	width: 100%;
+}
+
+.item .footer {
+	position: absolute;
+	right: 0px;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.6);
+	font-size: 11px;
+	padding: 4px;
+	margin: 4px;
+	color: #d1e000;
+	border-radius: 5px;
+}
+
+.item .footer.nocount {
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	letter-spacing:1px;
+}
+
+.item a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.item.is-dragging,
+.item.is-positioning-post-drag {
+  z-index: 2;
+}
+
+.item.double {
+	width: 605px;
+}
+
+.item.half {
+	height: 90px;
+}
+
+/* WEATHER */
+#weather {
+	background-color: #333;
+}
+
+#weather .content {
+	width: 100%;
+}
+
+#weather .content #temp {
+	float: right;
+	font-family: 'Anaheim', sans-serif;
+	font-size: 90px;
+	color: #d1e000;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#weather .content #temp #celsius {
+	font-size: 30px;
+	color: #fff;
+}
+
+#weather #weatherIcon {
+	float:left;
+	width: 100px;
+	height:100px;
+}
+
+#weather #weatherIcon img {
+	width: 100px;
+	height:100px;
+}
+
+#weather #moreInfo {
+	float: left;
+	width: 186px;
+	height: 140px;
+}
+
+#weather #moreInfo .part {
+	background-color: rgba(0,0,0,0.3);
+	padding: 5px;
+	float: left;
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+#weather #moreInfo .part .icon {
+	float: left;
+}
+
+#weather #moreInfo .part .title {
+	float: left;
+	font-size: 12px;
+	color: #d1e000;
+}
+
+#weather #moreInfo .part .value {
+	clear:both;
+	margin-top: 9px;
+	float: right;
+	font-size: 20px;
+}
+
+#weather #moreInfo .part .value.small {
+	font-size: 16px;
+	margin-top: 13px;
+}
+
+#weather #moreInfo .part .value .small {
+	font-size: 11px;
+}
+
+
+
+/* WEATHER FORECAST */
+#forecast {
+	background-color: #333;
+}
+
+#forecast .content {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#forecast #tempLabel {
+	margin-left: 15px;
+	color: #6BC9E3;
+	font-size: 16px;
+}
+
+#forecast #detailForecast {
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.3);
+}
+
+#forecast #detailForecast img {
+	width: 40px;
+	height: 40px;
+}
+
+#forecast #detailForecast tr {
+	height: 17px;
+}
+
+#forecast #detailForecast td {
+	text-align: center;
+	border-right: 2px #333 solid;
+}
+
+#forecast #detailForecast tr.odd {
+	background-color: #292929;
+}
+
+#forecast #detailForecast tr.days {
+	color: #6BC9E3;
+}
+
+#forecast #detailForecast td.TDtitle {
+	text-align: right;
+	padding-right: 10px;
+	color: #d1e000;
+}
+
+
+/* BUS */
+#bus {
+	background-color: #F09A00;
+}
+
+#bus #schedule {
+	float: left;
+}
+
+#bus #schedule #time {
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px;
+	float: left;
+}
+
+#bus #schedule #time #time-icon {
+	float: left;
+}
+
+#bus #schedule #time #time-list {
+	clear: both;
+	font-size: 17px;
+	float: left;
+}
+
+#bus #schedule #destination {
+	background-color: rgba(0,0,0,0.5);
+	margin-left: 3px;
+	padding: 5px;
+	float: left;
+	width: 230px;
+}
+
+#bus #schedule #destination #destination-icon {
+	float: left;
+}
+
+#bus #schedule #destination #destination-list {
+	clear: both;
+	font-size: 17px;
+}
+
+#bus #stopCode {
+	float: left;
+	margin-top: 3px;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.2);
+}
+
+#bus #stopCode:hover {
+	background-color: rgba(0,0,0,0.4);
+}
+
+
+/* BIKES */
+#bikes {
+	background-color: #00ada7;
+}
+
+#bikes .propertie {
+	float:left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#bikes .propertie .bikeTitle {
+	font-size: 18px;
+	color: #a5d610;
+}
+
+
+/* CARS */
+#cars {
+	background-color: #8a9735;
+}
+
+#cars .propertie {
+	float:left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#cars .propertie .carTitle {
+	font-size: 18px;
+	color: #ffd800;
+}
+
+/* PARKINGS */
+#parkings {
+	background-color: #00ada7;
+}
+
+#parkings .propertie {
+	float:left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#parkings .propertie .parkingTitle {
+	font-size: 18px;
+	color: #a5d610;
+}
+
+
+/* INSTAGRAM */
+#instagram {
+	background-color: #d55008;
+}
+
+#instagram img.insta {
+	width: 130px;
+	height: 130px;
+	float:left;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+
+/* WIKIPEDIA */
+#wikipedia {
+	background-color: #bf8f40;
+}
+
+#wikipedia #places {
+	float: left;
+}
+
+#wikipedia #places a:hover {
+	color: #A86030;
+}
+
+#wikipedia #places #dist {
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px;
+	float: left;
+}
+
+#wikipedia #places #dist #dist-icon {
+	float: left;
+}
+
+#wikipedia #places #dist #dist-list {
+	clear: both;
+	font-size: 17px;
+	float: left;
+}
+
+#wikipedia #places #place {
+	background-color: rgba(0,0,0,0.5);
+	margin-right: 3px;
+	padding: 5px;
+	float: left;
+	width: 210px;
+}
+
+#wikipedia #places #place #place-icon {
+	float: left;
+}
+
+#wikipedia #places #place #place-list {
+	clear: both;
+	font-size: 17px;
+}
+
+
+/* AIR QUALITY */
+#air {
+	background-color: #807040;
+}
+
+#air .propertie {
+	float:left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+#air .propertie .airTitle {
+	font-size: 18px;
+	color: #333333;
+}
+
+
+/* TWITTER TRENDS */
+#twitterTrends {
+	background-color: #7f4fd9;
+}
+
+#twitterTrends .trend {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	height: 30px;
+	color: #56E6E5;
+	background-color: rgba(0,0,0,0.5);
+	padding: 4px;
+}
+
+#twitterTrends .trend:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+
+#twitterTrends #trend1 {
+	font-size: 25px;
+}
+
+#twitterTrends #trend2 {
+	font-size: 24px;
+}
+
+#twitterTrends #trend3 {
+	font-size: 23px;
+}
+
+#twitterTrends #trend4 {
+	font-size: 22px;
+}
+
+#twitterTrends #trend5 {
+	font-size: 21px;
+}
+
+#twitterTrends #trend6 {
+	font-size: 20px;
+}
+
+#twitterTrends #trend7 {
+	font-size: 19px;
+}
+
+#twitterTrends #trend8 {
+	font-size: 18px;
+}
+
+#twitterTrends #trend9 {
+	font-size: 17px;
+}
+
+#twitterTrends #trend10 {
+	font-size: 16px;
+}
+
+
+/* LATEST TWEETS */
+#latestTweets {
+	background-color: #F0534B;
+}
+
+#latestTweets  .tweet {
+	float:left;
+	background-color: rgba(0,0,0,0.3);
+	padding: 4px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+#latestTweets  .tweet:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+
+/* POLICE TWEETS */
+#policeTweets {
+	background-color: #B03D37;
+}
+
+#policeTweets  .polTweet {
+	float:left;
+	background-color: rgba(0,0,0,0.3);
+	padding: 4px;
+	margin-right: 5px;
+	margin-bottom: 2px;
+}
+
+#policeTweets  .polTweet:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+
+/* DE LIJN TWEETS */
+#delijnTweets {
+	background-color: #603670;
+}
+
+#delijnTweets  .delijnTweet {
+	float:left;
+	background-color: rgba(0,0,0,0.3);
+	padding: 4px;
+	margin-right: 5px;
+	margin-bottom: 2px;
+}
+
+#delijnTweets  .delijnTweet:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+
+/* FOURSQUARE */
+#foursquare {
+	background-color: #FD9109;
+}
+
+#foursquare .checkin {
+	float: left;
+	background-color: rgba(0,0,0,0.3);
+	padding: 4px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+#foursquare  .checkin:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+
+/* NEWS */
+#news {
+	background-color: #009AF0;
+}
+
+#news ul li {
+	margin-bottom: 2px;
+	background-color: rgba(0,0,0,0.3);
+	padding: 4px;
+}
+
+#news  ul li:hover {
+	background-color: rgba(0,0,0,0.1);
+	cursor: pointer;
+}
+
+
+/* EVENTS */
+#events {
+	background-color: #3e9fbb;
+}
+
+#events  .event {
+	float: left;
+	clear: both;
+	width: 100%;
+	margin-bottom: 3px;
+}
+
+#events .event .thumb {
+	height: 60px;
+	width: 60px;
+	float:left;
+	clear: both;
+}
+
+#events .event .description {
+	float:left;
+	background-color: rgba(0,0,0,0.2);
+	padding: 3px;
+	width: 223px;
+	height: 60px;
+}
+
+#events .event .eventTitle {
+	float:left;
+	font-size: 15px;
+	margin-bottom: 3px;
+}
+
+#events .event .eventDate {
+	clear: both;
+	float:left;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+#events .event .eventLocation {
+	clear: both;
+	float:left;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+
+/* TRAFFIC CAMERAS */
+#trafficCams {
+	background-color: #a72b37;
+}
+
+#trafficCams .cam {
+	float:left;
+	text-align: center;
+	width: 135px;
+	margin-right: 5px;
+}
+
+#trafficCams img.trafCam {
+	width: 135px;
+	height: 100px;
+	float:left;
+}
+
+
+/* COMMENT BOX */
+#commentBox {
+	background-color: #4b3747;
+}
+
+#commentBox textarea.comment {
+	resize:none;
+	border: 1px solid #fff;
+	background-color: #fff;
+	width: 285px;
+	height: 120px;
+	padding: 5px;
+	color: #222222;
+	font-size: 14px;
+}
+
+#commentBox input {
+	border: none;
+	background-color: #fff;
+	margin-right: 0;
+	float: right;
+	cursor: pointer;
+}
+
+#commentBox input:hover {
+	background-color: #a72b37;
+	color: #fff;
+}
+
+
+/* LOADING SPINNER IMAGE */
+img.loader {
+	width: 25px;
+	height: 25px;
+	opacity: 0.5;
+}

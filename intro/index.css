@@ -1,0 +1,26 @@
+#loading {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	overflow: visible;
+	
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	
+	background-color: #333333;
+	
+	text-align: center;
+	padding: 20px;
+	border:1px solid #dcdcdc;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	
+	text-shadow: 1px 1px #999;
+}
+
+#loading-text {
+	margin-bottom: 10px;
+}

@@ -1,0 +1,1 @@
+{"stations":{"cambio1":{"station":"Gent-Dampoort","cambio":"Dampoort-station","numberOfCars":3,"blueBikes":"yes"},"cambio2":{"station":"Gent-Sint-Pieters","cambio":"B-Parking Gent-St-P","numberOfCars":2,"blueBikes":"yes"},"cambio3":{"station":"Gent-Sint-Pieters","cambio":"Hendrika","numberOfCars":6,"blueBikes":"no"}},"totalCarCount":11}
