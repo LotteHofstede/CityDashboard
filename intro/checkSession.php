@@ -4,6 +4,6 @@
 
 	if(isset($_SESSION['hasPos'])){
 		$cityCap = $_SESSION['city'];
-		header('Location: ../cities/'.$cityCap.'.php'); 
+		header('Location: ../cities/');
 	}
 ?>

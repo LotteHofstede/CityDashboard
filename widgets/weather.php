@@ -1,4 +1,4 @@
-<div id="basic">
+<div id="start">
 				<div class="content">
 					<?php
 						session_start();
@@ -25,7 +25,7 @@
 
 
 
-<div id="detail">
+<div id="more">
 	<div id="weatherIcon">
 		<img src="../weather/<?php echo $imgCode; ?>.png"></img>
 	</div>

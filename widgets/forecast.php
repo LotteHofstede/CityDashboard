@@ -4,7 +4,8 @@
 	$jsondata = file_get_contents($url);
 	$arrayData = json_decode($jsondata, true);
 ?>
-<div id="detailForecast">
+
+<div id="more">
 		<table id="forecastTable" border="0" width="100%">
 			<tr>
 				<td></td>

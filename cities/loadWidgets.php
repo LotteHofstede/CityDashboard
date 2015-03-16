@@ -8,6 +8,6 @@
     $_SESSION["city"] = $_SESSION["city"]?$_SESSION["city"]:"brussel";
     foreach($cities[$_SESSION["city"]] as $widget) {
         readfile("widgets/" . $widget . ".html");
-    } 
+    }
 
 ?>

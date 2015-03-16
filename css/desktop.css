@@ -314,34 +314,34 @@ header #restart a:hover {
 	font-size: 16px;
 }
 
-#forecast #detailForecast {
+#forecast #more {
 	overflow: hidden;
 	background-color: rgba(0,0,0,0.3);
 }
 
-#forecast #detailForecast img {
+#forecast #more img {
 	width: 40px;
 	height: 40px;
 }
 
-#forecast #detailForecast tr {
+#forecast #more tr {
 	height: 17px;
 }
 
-#forecast #detailForecast td {
+#forecast #more td {
 	text-align: center;
 	border-right: 2px #333 solid;
 }
 
-#forecast #detailForecast tr.odd {
+#forecast #more tr.odd {
 	background-color: #292929;
 }
 
-#forecast #detailForecast tr.days {
+#forecast #more tr.days {
 	color: #6BC9E3;
 }
 
-#forecast #detailForecast td.TDtitle {
+#forecast #more td.TDtitle {
 	text-align: right;
 	padding-right: 10px;
 	color: #d1e000;
