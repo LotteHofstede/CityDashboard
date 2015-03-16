@@ -55,7 +55,7 @@ Loads all the widgets into the index page using jQuery and adds a few click even
 
 #### php
 Some php files/scripts used all over the dashboard.
-*MongoDBHandler.php
+* MongoDBHandler.php
 	+ Handles all the MongoDB requests for reusability
 #### weather
 All the required stuff for the weather-graph.
