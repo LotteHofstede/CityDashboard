@@ -1,19 +1,22 @@
 # City Dashboard
 ## Description
 This is the repository for the city dashboards for Leuven, Antwerpen, Gent and Brussel.
-<br>Current address of the dashboard is [http://534634.webontwerp.khleuven.be/stage/](http://534634.webontwerp.khleuven.be/stage/).
+<br>Current address of the dashboard is [http://lottehofstede.nl/Stage/](http://lottehofstede.nl/Stage/).
 
 ## Contents
 ### index.php
 This file simply redirects the visitor to the intro page where he/she must choose how to share his/her location.
 
-### folders
+### Folders
 #### cities
-The files in this folder are the html templates for each city.
-<br>Not all cities use the same widgets (the dashboard parts), so every city has it's own template.
+The index-file in this folder is the html templates for the cities. 
+<br>Not all cities use the same widgets (the dashboard parts), so loadWidgets.php generates the template file for each city.
+
+#####widgets
+Contains the widget-template files that should populate the index.php file.
 
 #### css
-This are the css files used bij the website. 
+These are the css files used by the website. 
 <br>There is a file for the desktop version and a file for the mobile version.
 <br>The detection of desktop/mobile is done by media queries.
 
@@ -44,11 +47,18 @@ Images used by the dashboard.
 When a visitor starts or restarts a session, he will be redirected here the first time.
 <br>The users location is defined here, and the information is stored in de database.
 
+#### js
+A few important js files
+
+##### contentLoader.js
+Loads all the widgets into the index page using jQuery and adds a few click events.
+
 #### php
 Some php files/scripts used all over the dashboard.
-
+*MongoDBHandler.php
+	+ Handles all the MongoDB requests for reusability
 #### weather
-All the required stuff for the weather.
+All the required stuff for the weather-graph.
 
 #### widgets
 The pages that are loaded into the widgets (the dashboard parts) with jQuery.
